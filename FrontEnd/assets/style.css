@@ -186,3 +186,52 @@ footer nav ul {
 	margin: 2em
 }
 
+
+/* Ajout des filtres */
+
+.filtres {
+	color: #1D6154;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	grid-gap: 10px;
+  }
+
+  .tous, .appartements, .objets, .hotel {
+
+	border: solid #1D6154 1px;
+	border-radius: 60px;
+	color: #1D6154;
+	padding: 9px 0 9px 0;
+	cursor: pointer;
+  }
+
+  .tous:hover, .appartements:hover, .objets:hover, .hotel:hover {
+	background: #1D6154;
+	color: #ffffff;
+  }
+
+  .objets {
+	padding: 9px 21px 9px 21px;
+  }
+
+  .appartements {
+	padding: 9px 14px 9px 14px;
+  }
+
+  .hotel {
+	padding: 9px 10px 9px 10px;
+  }
+
+  .tous {
+	padding: 9px 29px 9px 29px;
+  }
+
+  .filtres span {
+	font-family: 'Syne';
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+  }
+
