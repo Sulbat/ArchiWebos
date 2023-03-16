@@ -240,3 +240,89 @@ footer nav ul {
 	line-height: 19px;
   }
 
+
+
+  .btnProjets {
+	display: flex;
+	align-items: center;
+	justify-content: center; /* centre les éléments horizontalement */
+	position: relative;
+  }
+  
+  .btnProjets button {
+	border: none;
+	font-family:"Work Sans";
+	cursor: pointer;
+	background-color: inherit;
+	position: absolute;
+	top: 10px;
+	left: 65%;
+	transform: translateX(-40%);
+  }
+
+  .btnProjets i {
+	position: absolute;
+	top: 10px;
+	left: 62%;
+	transform: translateX(-50%);
+  }
+
+
+  /* ajout */
+
+
+  .admin-headband {
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	position: relative;
+	max-width: none;
+  }
+  
+  .edition-mode {
+	color: white;
+  }
+  
+  .edition-mode > i {
+	color: white;
+  }
+  
+  .admin-headband > button {
+	background-color: white;
+	font-family: "Work Sans";
+	font-size: 14px;
+	font-weight: 500;
+	padding: 10px;
+	min-width: 100px;
+	border-radius: 60px;
+	transition: all 0.2s;
+  }
+  
+  .admin-headband > button:hover {
+	background-color: lightgray;
+  }
+  
+  i {
+	padding-right: 8px;
+  }
+  
+  .editButton {
+	border: none;
+	background-color: transparent;
+	margin-bottom: 20px;
+	padding: 0;
+	transition: text-shadow 0.2s;
+  }
+  
+  .editButton:hover {
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .logout {
+	display: none;
+  }
+

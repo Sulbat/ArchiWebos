@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
       rel="stylesheet"
     />
     <meta name="description" content="" />
+    <script src="https://kit.fontawesome.com/45352d0537.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/modale.css" />
 
     <!-- Ajout du javascript dans le html -->
-    <script src="projets.js"></script>
+    <script src="projets.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,7 +26,8 @@
         <ul>
           <li>projets</li>
           <li>contact</li>
-          <li><a href="./login.html">login</a></li>
+          <li class="login"><a href="login.html">login</a></li>
+          <li class="logout"><a href="index.html">logout</a> </li>
           <li><img src="./assets/icons/instagram.png" alt="Instagram" /></li>
         </ul>
       </nav>
@@ -53,7 +57,55 @@
         </article>
       </section>
       <section id="portfolio">
-        <h2>Mes Projets</h2>
+        <div class="btnProjets">
+          <div class="mes-projets-title-container"><h2>Mes Projets</h2></div>
+          <i class="fa-sharp fa-regular fa-pen-to-square"></i>
+          <button id="modifier">modifier</button>
+          </div>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Galerie photo</h2>
+              <div class="modal-body">
+                
+              <!-- Contenu de la galerie, images, etc. -->
+              </div>
+              <div class="modalBtn">
+              <button id="ajouter-photo">Ajouter une photo</button>
+              <button id="supprimer-galerie">Supprimer la galerie</button>
+              </div>
+            </div>
+            </div>
+            
+            <div id="add-photo-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Ajout photo</h2>
+              <form id="add-photo-form" enctype="multipart/form-data">
+              <div class="picture flexCenter column" id="Upload_img">
+                <img src="./assets/icons/image.png" alt="logo image" id="logo_image"/>
+                <label class="picture_input flexCenter"><h3>+ Ajout photo</h3><input type="file" id="image" name="image" accept=".jpg, .png"/></label>
+                <p>jpg, png: 4mo max</p>
+              </div><br><br>
+              <span id="error-img"></span>
+      
+              <label for="title">Titre :</label><br><br>
+              <input type="text" id="title" name="title" required><br><br>
+              <label for="category">Catégorie :</label><br><br>
+              <select id="category" name="category">
+                <option value="objets">Objets</option>
+                <option value="appartements">Appartements</option>
+                <option value="hotel_restaurant">Hotels & restaurants</option>
+              </select><br><br>
+              <input type="submit" value="Valider" id="valider">
+            </form>			
+            </div>
+            </div>
+
+
+
+
+
 
         <!-- Ajout des filtres -->
         <div class="filtres">
