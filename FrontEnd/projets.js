@@ -166,15 +166,6 @@ function closeModal() {
 
 
 
-
-// function returnModal () {                    mettre la fleche dans le html
-//   modal.style.display = "block";
-// }
-
-
-
-
-
 // Gestionnaire d'événements pour afficher la fenêtre modale
 modifier.addEventListener("click", function(event) {
   event.preventDefault();
@@ -402,20 +393,29 @@ addPhotoForm.addEventListener('submit', async (event) => {
     }
   } catch (error) {
     console.error('Une erreur est survenue', error);
-    // alert('Une erreur est survenue lors de l\'ajout de l\'image');
   }
 });
 
 const addPhotoModal = document.querySelector('#add-photo-modal');
 const addPhotoCloseBtn = addPhotoModal.querySelector('.close');
+const addPhotoReturnBtn = addPhotoModal.querySelector('.fa-solid');
+
+
+  // Si l'utilisateur clique sur la croix, fermer la modale image
 addPhotoCloseBtn.addEventListener('click', () => {
   addPhotoModal.style.display = 'none';
 });
 window.addEventListener('click', (event) => {
+
   // Si l'événement de clic se produit en dehors de la modale, la fermer
   if (event.target == addPhotoModal) {
     addPhotoModal.style.display = 'none';
   }
+
+  // Si l'utilisateur clique sur la flèche de retour, fermer la modale image
+  addPhotoReturnBtn.addEventListener('click', () => {
+  addPhotoModal.style.display = 'none';
+  });
 });
 
 
@@ -469,4 +469,3 @@ const inputFile = document.getElementById("image");
 
 // Ajouter un gestionnaire d'événements pour la sélection de fichier
 inputFile.addEventListener("change", readFile);
-

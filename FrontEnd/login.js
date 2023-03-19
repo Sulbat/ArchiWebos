@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify({ email, password })
       })
       
-      loginButton.innerHTML += 'Connexion en cours...'
+      loginButton.innerHTML += ''
       if (!response.ok) {
         throw new Error('Echec de la connexion')
       }
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     } catch (error) {
       console.log(error)
       loginErrorMsg.style.display = 'block'
-      loginButton.innerHTML += 'Echec de la connexion'
+      loginButton.innerHTML += 'Erreur dans l’identifiant ou le mot de passe'
       loginButton.removeAttribute('disabled')
     }
   })
