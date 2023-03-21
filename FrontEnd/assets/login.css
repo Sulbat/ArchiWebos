@@ -1,96 +1,96 @@
 body {
-    background: #fffef8;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-  }
-  
-  a:hover,
-  a:active,
-  a[href='login.html'] {
-    font-weight: bold;
-  }
-  
-  .login {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 37px;
-  }
-  
-  .login > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .login > form > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 7px;
-  }
-  
-  input,
-  select {
-    width: 380px;
-    height: 50px;
-    border: none;
-    background: #ffffff;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
-    padding: 0 20px;
-  }
-  
-  .login-button-container {
-    align-items: center;
-  }
-  
-  .loginButton {
-    background-color: #1d6154;
-    color: white;
-    padding: 10px 39px;
-    border-radius: 60px;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .login-error-msg {
-    color: red;
-    align-self: center;
-    visibility: hidden;
-  }
-  
-  .forgotten-pwd-link {
-    text-decoration: underline;
-    font-weight: 600;
-    color: #3d3d3d;
-  }
-  
-  nav ul li {
-    color : #000000;
-  }
-  
-  .footer-of-login-page {
-      position: absolute;
-      left: 0%;
-      right: 0%;
-      top: 90%;
-      bottom: 0%;
-      color: white;
-  }
-  
-  .footer-of-login-page > nav > ul {
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    right: 100px;
-    margin: 0;
-  }
+  background: #fffef8;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+a:hover,
+a:active,
+a[href="login.html"] {
+  font-weight: bold;
+}
+
+.login {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 37px;
+}
+
+.login > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.login > form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+
+input,
+select {
+  width: 380px;
+  height: 50px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+}
+
+.login-button-container {
+  align-items: center;
+}
+
+.loginButton {
+  background-color: #1d6154;
+  color: white;
+  padding: 10px 39px;
+  border-radius: 60px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-error-msg {
+  color: red;
+  align-self: center;
+  visibility: hidden;
+}
+
+.forgotten-pwd-link {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #3d3d3d;
+}
+
+nav ul li {
+  color: #000000;
+}
+
+.footer-of-login-page {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 90%;
+  bottom: 0%;
+  color: white;
+}
+
+.footer-of-login-page > nav > ul {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 100px;
+  margin: 0;
+}
